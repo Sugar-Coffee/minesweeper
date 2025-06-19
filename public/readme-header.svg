@@ -1,0 +1,107 @@
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Main gradient background matching the game -->
+    <radialGradient id="mainBg" cx="50%" cy="30%" r="100%">
+      <stop offset="0%" style="stop-color:#374151;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1f2937;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111827;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Bomb gradient -->
+    <radialGradient id="bombGrad" cx="30%" cy="30%" r="80%">
+      <stop offset="0%" style="stop-color:#6b7280;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#374151;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Spark gradient -->
+    <radialGradient id="sparkGrad" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Text gradient matching the game title -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background with gradient -->
+  <rect width="800" height="400" fill="url(#mainBg)"/>
+  
+  <!-- Decorative animated blobs like in the game -->
+  <circle cx="120" cy="80" r="60" fill="#374151" opacity="0.3"/>
+  <circle cx="680" cy="320" r="80" fill="#1f2937" opacity="0.4"/>
+  <circle cx="650" cy="100" r="45" fill="#4b5563" opacity="0.2"/>
+  
+  <!-- Grid pattern overlay like in the game -->
+  <defs>
+    <pattern id="gridPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.5" fill="#4b5563" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="400" fill="url(#gridPattern)"/>
+  
+  <!-- Main bomb icon -->
+  <g transform="translate(150, 150)">
+    <circle cx="0" cy="20" r="50" fill="url(#bombGrad)"/>
+    <ellipse cx="-12" cy="8" rx="12" ry="18" fill="#9ca3af" opacity="0.6"/>
+    <ellipse cx="-18" cy="2" rx="6" ry="9" fill="#d1d5db" opacity="0.4"/>
+    
+    <!-- Fuse -->
+    <path d="M35 -5 C45 -15, 55 -25, 65 -35" stroke="#fbbf24" stroke-width="4" stroke-linecap="round" fill="none"/>
+    
+    <!-- Spark -->
+    <circle cx="65" cy="-35" r="6" fill="url(#sparkGrad)"/>
+    <circle cx="65" cy="-35" r="4" fill="#fef3c7"/>
+    
+    <!-- Small sparks -->
+    <circle cx="62" cy="-38" r="1.5" fill="#fbbf24" opacity="0.8"/>
+    <circle cx="68" cy="-32" r="1.5" fill="#fbbf24" opacity="0.8"/>
+    <circle cx="68" cy="-38" r="1.5" fill="#fbbf24" opacity="0.6"/>
+  </g>
+  
+  <!-- Main title -->
+  <text x="400" y="180" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" 
+        font-size="64" font-weight="bold" fill="url(#titleGrad)" text-anchor="middle">
+    Minesweeper
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="400" y="220" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" 
+        font-size="24" fill="#d1d5db" text-anchor="middle" opacity="0.9">
+    Classic Puzzle Game with Modern Design
+  </text>
+  
+  <!-- Feature highlights -->
+  <text x="400" y="260" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" 
+        font-size="16" fill="#9ca3af" text-anchor="middle">
+    🌙 Dark/Light Mode  •  💾 Save/Resume  •  📱 Mobile Optimized  •  🎨 Smooth Animations
+  </text>
+  
+  <!-- Decorative minesweeper cells -->
+  <g transform="translate(580, 280)">
+    <!-- Revealed cell with number 1 -->
+    <rect x="0" y="0" width="30" height="30" fill="#e5e7eb" stroke="#d1d5db" stroke-width="1.5" rx="3"/>
+    <text x="15" y="21" font-family="monospace" font-size="18" font-weight="bold" fill="#3b82f6" text-anchor="middle">1</text>
+    
+    <!-- Revealed cell with number 2 -->
+    <rect x="35" y="0" width="30" height="30" fill="#e5e7eb" stroke="#d1d5db" stroke-width="1.5" rx="3"/>
+    <text x="50" y="21" font-family="monospace" font-size="18" font-weight="bold" fill="#059669" text-anchor="middle">2</text>
+    
+    <!-- Unrevealed cell -->
+    <rect x="0" y="35" width="30" height="30" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5" rx="3"/>
+    
+    <!-- Flagged cell -->
+    <rect x="35" y="35" width="30" height="30" fill="#9ca3af" stroke="#6b7280" stroke-width="1.5" rx="3"/>
+    <text x="50" y="56" font-size="16" fill="#ef4444" text-anchor="middle">🚩</text>
+  </g>
+  
+  <!-- Sparkle effects -->
+  <circle cx="300" cy="80" r="2" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="500" cy="120" r="1.5" fill="#8b5cf6" opacity="0.7"/>
+  <circle cx="320" cy="320" r="2.5" fill="#3b82f6" opacity="0.5"/>
+  <circle cx="480" cy="340" r="1.8" fill="#ef4444" opacity="0.6"/>
+</svg> 

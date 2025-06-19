@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://minesweeper-game.vercel.app/sitemap.xml
+Sitemap: https://minesweeper.sugarandcoffee.co.uk/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1 

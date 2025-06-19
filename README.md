@@ -1,17 +1,27 @@
-# 💣 Minesweeper Game
-
 <div align="center">
 
-![Minesweeper Game](public/og-image.svg)
+# 💣 Minesweeper Game
+
+![Minesweeper Game Header](public/readme-header.svg)
 
 **A beautiful, modern take on the classic Minesweeper puzzle game**
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-minesweeper.sugarandcoffee.co.uk-blue?style=for-the-badge)](https://minesweeper.sugarandcoffee.co.uk)
-[![Built with Next.js](https://img.shields.io/badge/Built_with-Next.js_15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+</div>
+
+<br>
+
+<div align="center">
+
+[![🚀 Live Demo](https://img.shields.io/badge/🚀_Live_Demo-minesweeper.sugarandcoffee.co.uk-4F46E5?style=for-the-badge&labelColor=1F2937)](https://minesweeper.sugarandcoffee.co.uk)
+
+[![Next.js 15](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js&logoColor=white&labelColor=000000)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white&labelColor=1F2937)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white&labelColor=1F2937)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-11.0-FF0055?style=for-the-badge&logo=framer&logoColor=white&labelColor=1F2937)](https://www.framer.com/motion/)
 
 </div>
+
+<br>
 
 ## ✨ Features
 
