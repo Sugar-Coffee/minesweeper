@@ -1,0 +1,44 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#374151;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1f2937;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="bomb" cx="30%" cy="30%" r="80%">
+      <stop offset="0%" style="stop-color:#6b7280;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#374151;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="spark" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="url(#bg)" stroke="#4b5563" stroke-width="2"/>
+  
+  <!-- Bomb body -->
+  <circle cx="30" cy="36" r="16" fill="url(#bomb)"/>
+  
+  <!-- Bomb highlight -->
+  <ellipse cx="26" cy="30" rx="4" ry="6" fill="#9ca3af" opacity="0.6"/>
+  <ellipse cx="24" cy="28" rx="2" ry="3" fill="#d1d5db" opacity="0.4"/>
+  
+  <!-- Fuse -->
+  <path d="M42 24 C46 20, 50 16, 52 12" stroke="#fbbf24" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <!-- Spark at end of fuse -->
+  <circle cx="52" cy="12" r="3" fill="url(#spark)"/>
+  <circle cx="52" cy="12" r="2" fill="#fef3c7"/>
+  
+  <!-- Small sparks around main spark -->
+  <circle cx="50" cy="10" r="1" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="54" cy="14" r="1" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="54" cy="10" r="1" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="49" cy="13" r="0.8" fill="#f59e0b" opacity="0.7"/>
+  
+  <!-- Additional bomb details -->
+  <circle cx="30" cy="36" r="13" fill="none" stroke="#4b5563" stroke-width="1" opacity="0.3"/>
+</svg> 

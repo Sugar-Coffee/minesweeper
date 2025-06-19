@@ -1,0 +1,47 @@
+{
+  "name": "Minesweeper Game - Classic Puzzle",
+  "short_name": "Minesweeper",
+  "description": "Play the classic Minesweeper puzzle game with a beautiful modern interface",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1f2937",
+  "theme_color": "#374151",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon.svg", 
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-icon.svg",
+      "sizes": "180x180", 
+      "type": "image/svg+xml"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Minesweeper Game Desktop View"
+    },
+    {
+      "src": "/screenshot-narrow.png", 
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Minesweeper Game Mobile View"
+    }
+  ]
+} 

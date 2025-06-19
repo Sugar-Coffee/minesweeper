@@ -1,0 +1,44 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#374151;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1f2937;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="bomb" cx="30%" cy="30%" r="80%">
+      <stop offset="0%" style="stop-color:#6b7280;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#374151;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="spark" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Rounded background for iOS -->
+  <rect width="180" height="180" rx="40" fill="url(#bg)"/>
+  
+  <!-- Bomb body -->
+  <circle cx="85" cy="100" r="45" fill="url(#bomb)"/>
+  
+  <!-- Bomb highlight -->
+  <ellipse cx="73" cy="85" rx="12" ry="18" fill="#9ca3af" opacity="0.6"/>
+  <ellipse cx="68" cy="80" rx="6" ry="9" fill="#d1d5db" opacity="0.4"/>
+  
+  <!-- Fuse -->
+  <path d="M118 68 C128 56, 138 44, 145 32" stroke="#fbbf24" stroke-width="8" stroke-linecap="round" fill="none"/>
+  
+  <!-- Spark at end of fuse -->
+  <circle cx="145" cy="32" r="8" fill="url(#spark)"/>
+  <circle cx="145" cy="32" r="6" fill="#fef3c7"/>
+  
+  <!-- Small sparks around main spark -->
+  <circle cx="139" cy="27" r="3" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="151" cy="37" r="3" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="151" cy="27" r="3" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="137" cy="35" r="2.5" fill="#f59e0b" opacity="0.7"/>
+  
+  <!-- Additional bomb details -->
+  <circle cx="85" cy="100" r="38" fill="none" stroke="#4b5563" stroke-width="2" opacity="0.3"/>
+  <circle cx="85" cy="100" r="32" fill="none" stroke="#6b7280" stroke-width="1" opacity="0.2"/>
+</svg> 
