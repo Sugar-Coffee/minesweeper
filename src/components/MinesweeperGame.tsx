@@ -52,6 +52,24 @@ export function MinesweeperGame() {
     }
   }, [board, gameStatus, firstClick, startTime, gameSeed]);
 
+  // Reset game to initial state
+  const resetGame = useCallback(() => {
+    const newBoard = createEmptyBoard(BOARD_SIZE);
+    const newSeed = Math.random().toString(36).substring(2, 15);
+    
+    setBoard(newBoard);
+    setGameStatus('playing');
+    setTimer(0);
+    setStartTime(null);
+    setFirstClick(true);
+    setExplodedCell(undefined);
+    setShowModal(false);
+    setGameSeed(newSeed);
+    
+    // Clear saved game
+    storage.remove(GAME_SAVE_KEY);
+  }, []);
+
   // Load game state from localStorage
   const loadGame = useCallback(() => {
     const savedGame = storage.get(GAME_SAVE_KEY) as GameState;
@@ -71,25 +89,7 @@ export function MinesweeperGame() {
       // Start fresh game
       resetGame();
     }
-  }, []);
-
-  // Reset game to initial state
-  const resetGame = useCallback(() => {
-    const newBoard = createEmptyBoard(BOARD_SIZE);
-    const newSeed = Math.random().toString(36).substring(2, 15);
-    
-    setBoard(newBoard);
-    setGameStatus('playing');
-    setTimer(0);
-    setStartTime(null);
-    setFirstClick(true);
-    setExplodedCell(undefined);
-    setShowModal(false);
-    setGameSeed(newSeed);
-    
-    // Clear saved game
-    storage.remove(GAME_SAVE_KEY);
-  }, []);
+  }, [resetGame]);
 
   // Initialize game on mount
   useEffect(() => {
@@ -251,7 +251,7 @@ export function MinesweeperGame() {
         cause: 'chord_click'
       });
     }
-  }, [board, gameStatus]);
+  }, [board, gameStatus, startTime, gameSeed]);
 
   // Handle reset
   const handleReset = useCallback(() => {
